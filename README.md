@@ -14,22 +14,22 @@ MVP-проєкт для:
 ## 📁 Структура проєкту
 
 diploma_project/
--│
--├── app_v2.py # FastAPI сервіс: збір відгуків і запис у БД
--├── collect_category_urls.py # Збір URL товарів з категорії Rozetka (Playwright)
--├── run_range_to_db.py # Batch-запуск: відправка URL у API
--├── product_urls.json # Список зібраних URL товарів
--│
--├── init_profile.py # Прогрів Playwright-профілю (Cloudflare)
--├── pw_profile/ # Persistent browser profile (cookies, CF)
--│
--├── ml/
--│   ├── 01_extract_raw_reviews.py  # Витяг даних з PostgreSQL у parquet
--│   ├── 02_nlp_features.py         # Sentiment + NLP-ознаки (SKU-level)
--│   ├── 03_dirichlet_smoothing.py  # Bayesian згладжування рейтингу
--│   └── 04_final_scoring.py        # Інтегральний фінальний скор
--│
--└── README.md
+- │
+- ├── app_v2.py # FastAPI сервіс: збір відгуків і запис у БД
+- ├── collect_category_urls.py # Збір URL товарів з категорії Rozetka (Playwright)
+- ├── run_range_to_db.py # Batch-запуск: відправка URL у API
+- ├── product_urls.json # Список зібраних URL товарів
+- │
+- ├── init_profile.py # Прогрів Playwright-профілю (Cloudflare)
+- ├── pw_profile/ # Persistent browser profile (cookies, CF)
+- │
+- ├── ml/
+- │   ├── 01_extract_raw_reviews.py  # Витяг даних з PostgreSQL у parquet
+- │   ├── 02_nlp_features.py         # Sentiment + NLP-ознаки (SKU-level)
+- │   ├── 03_dirichlet_smoothing.py  # Bayesian згладжування рейтингу
+- │   └── 04_final_scoring.py        # Інтегральний фінальний скор
+- │
+- └── README.md
 
 ---
 
