@@ -9,10 +9,10 @@ OUT_DATA = "data/products_final_scores_scenarios.parquet"
 OUT_SUMMARY = "data/final_score_scenarios_summary.csv"
 
 SCENARIOS = [
-    ("soft",        0.40, 1.00, 0.50, 10),
-    ("balanced",    0.80, 1.20, 1.00, 10),
-    ("strict",      1.30, 1.50, 1.50, 10),
-    ("very_strict", 1.70, 1.80, 2.00, 15),
+    ("soft",        0.40, 0.90, 0.50, 10),
+    ("balanced",    0.80, 0.80, 1.00, 10),
+    ("strict",      1.30, 0.60, 1.50, 10),
+    ("very_strict", 1.70, 0.50, 2.00, 15),
 ]
 
 def compute_penalty(prod, lam, gamma, beta_mismatch, min_reviews_for_full_penalty):

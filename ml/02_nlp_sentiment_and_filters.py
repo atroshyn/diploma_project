@@ -7,7 +7,7 @@ OUT = "data/features.parquet"
 
 SENTIMENT_MODEL = os.environ.get(
     "SENTIMENT_MODEL",
-    "cardiffnlp/twitter-xlm-roberta-base-sentiment"
+    "cointegrated/rubert-tiny-sentiment-balanced"
 )
 
 def sentiment_to_3(label: str) -> str:
